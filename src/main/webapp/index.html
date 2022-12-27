@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1><a href="MyServlet">Click here to send GET request from 1st Servlet</a></h1>
+<h1><a href="LoginServlet">Click here to send GET request from 2nd Servlet</a></h1>
+
+
+     
+    <br/><br/>
+     
+    <form action="MyServlet" method="post">
+        Width: <input type="text" size="5" name="width"/>
+        &nbsp;&nbsp;
+        Height <input type="text" size="5" name="height"/>
+        &nbsp;&nbsp;
+        <input type="submit" value="Calculate" />
+    </form>
+    <br/><br/>
+    
+    <form name="loginForm" method="post" action="LoginServlet">
+    UserName: <input type="text" name="username"/>
+    &nbsp;&nbsp;
+    Password: <input type="password" name="password"/>  
+    &nbsp;&nbsp;
+    <input type="submit" value="Login" />
+</form>
+</body>
+</html>
